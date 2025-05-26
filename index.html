@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagem Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="post-form">
+            <h1>Criar Nova Postagem</h1>
+            <form id="postForm">
+                <div class="form-group">
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="conteudo">Conteúdo:</label>
+                    <textarea id="conteudo" name="conteudo" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Publicar Post</button>
+            </form>
+        </section>
+
+        <section class="post-result">
+            <h2>Última Postagem:</h2>
+            <article id="postRenderizado">
+                <h3 id="renderizador-titulo">Aguardando postagem...</h3>
+                <p id="renderizador-conteudo"></p>
+                <div id="post-info" class="post-info"></div>
+            </article>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
